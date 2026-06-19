@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "mcp__Claude_Preview__preview_start",
+      "WebFetch(domain:bit.ly)",
+      "WebFetch(domain:adobe.ly)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Binal\\\\Desktop\",\"C:\\\\Users\\\\Binal\\\\Downloads\",\"C:\\\\Users\\\\Binal\\\\Pictures\" -Recurse -ErrorAction SilentlyContinue -File | Where-Object { $_.Name -match \"nirvisha|profiole|profile\" } | Select-Object FullName, Name)"
+    ]
+  }
+}
