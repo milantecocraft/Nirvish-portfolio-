@@ -307,8 +307,10 @@ h1, h2, h3, h4 { color: var(--heading); font-weight: 700; letter-spacing: -0.02e
 .field.err input, .field.err select, .field.err textarea { border-color: #f0606a; }
 .field .msg { font-size: 12.5px; color: #f0606a; display: none; }
 .field.err .msg { display: block; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
 .form__status { font-size: 14px; font-weight: 600; color: var(--teal); display: none; }
 .form__status.show { display: block; }
+.form__status.err-status { color: #f0606a; }
 .contact__info { display: grid; gap: 14px; }
 .cinfo { display: flex; gap: 14px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease); }
 .cinfo:hover { transform: translateY(-3px); box-shadow: var(--shadow-sm); border-color: var(--line-2); }

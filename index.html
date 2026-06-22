@@ -303,6 +303,13 @@
         </div>
         <div class="contact__grid">
           <form class="form" id="contactForm" novalidate>
+            <!-- Web3Forms delivery: get a free access key at https://web3forms.com
+                 (enter nirvisha.v@gmail.com, copy the key it gives you) and paste it below. -->
+            <input type="hidden" name="access_key" value="08308001-c305-40cf-9de5-e8a4f2455722" />
+            <input type="hidden" name="subject" value="New message from your portfolio site" />
+            <input type="hidden" name="from_name" value="Nirvisha Portfolio" />
+            <!-- Honeypot spam trap (hidden from real users) -->
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <div class="field" id="f-name">
               <label for="name">Name *</label>
               <input type="text" id="name" name="name" placeholder="Your name" required />
@@ -329,7 +336,7 @@
             <button type="submit" class="btn btn--primary btn--block">Send Message
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 2L7 9M14 2l-4.5 12-2.5-5-5-2.5L14 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
             </button>
-            <p class="form__status" id="formStatus">Thanks! Your message is ready to send - connect a form backend to deliver it.</p>
+            <p class="form__status" id="formStatus">Thanks! Your message has been sent - I'll get back to you within 24 hours.</p>
           </form>
 
           <aside class="contact__info">

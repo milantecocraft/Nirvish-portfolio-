@@ -296,22 +296,60 @@ burger.addEventListener('click', () => toggleNav(!nav.classList.contains('open')
 backdrop.addEventListener('click', () => toggleNav(false));
 nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleNav(false)));
 
-/* ---------- Contact form validation ---------- */
+/* ---------- Contact form: validate + send to inbox via Web3Forms ---------- */
 const form = document.getElementById('contactForm');
 if (form) {
   const setErr = (id, bad) => document.getElementById(id).classList.toggle('err', bad);
-  form.addEventListener('submit', e => {
+  const status = document.getElementById('formStatus');
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const btnText = submitBtn ? submitBtn.innerHTML : '';
+
+  const showStatus = (msg, isError) => {
+    status.textContent = msg;
+    status.classList.toggle('err-status', !!isError);
+    status.classList.add('show');
+  };
+
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     const name = form.name.value.trim();
     const email = form.email.value.trim();
     const message = form.message.value.trim();
     const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     setErr('f-name', !name); setErr('f-email', !emailOk); setErr('f-message', !message);
-    if (name && emailOk && message) {
-      document.getElementById('formStatus').classList.add('show');
-      form.reset();
+    if (!(name && emailOk && message)) return;
+
+    const key = form.access_key ? form.access_key.value.trim() : '';
+    // If the Web3Forms key hasn't been set yet, don't silently fail.
+    if (!key || key === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+      showStatus('Almost there - add your free Web3Forms access key in index.html to start receiving emails.', true);
+      console.warn('[contact form] Set your Web3Forms access key: get one free at https://web3forms.com');
+      return;
+    }
+
+    status.classList.remove('show', 'err-status');
+    if (submitBtn) { submitBtn.disabled = true; submitBtn.innerHTML = 'Sending…'; }
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      });
+      const data = await res.json();
+      if (data.success) {
+        showStatus("Thanks! Your message has been sent - I'll get back to you within 24 hours.", false);
+        form.reset();
+      } else {
+        showStatus(data.message || 'Something went wrong. Please email me directly at nirvisha.v@gmail.com.', true);
+      }
+    } catch (err) {
+      showStatus('Network error - please email me directly at nirvisha.v@gmail.com.', true);
+    } finally {
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = btnText; }
     }
   });
+
   ['name', 'email', 'message'].forEach(n => form[n].addEventListener('input', () => form[n].closest('.field').classList.remove('err')));
 }
 
