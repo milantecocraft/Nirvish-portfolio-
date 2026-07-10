@@ -55,6 +55,46 @@ const PROJECTS = [
     tools: 'Adobe XD', link: 'https://adobe.ly/3Git8Os', linkType: 'Adobe XD'
   },
   {
+    id: 'byjimmy', title: 'By Jimmy - Personalized Skincare', cats: ['ecommerce'],
+    tags: ['E-commerce', 'Beauty', 'Shopify'], desc: 'A made-to-order skincare and haircare store built around a personalization quiz.',
+    overview: 'A direct-to-consumer beauty brand where every serum, cleanser, and shampoo is compounded fresh to order. The storefront is built around a short Skin ID / Hair ID quiz that turns a complex lab process into a simple, guided flow.',
+    challenge: 'Custom compounding is science-heavy. Shoppers had to trust the lab and the formulator without being buried in chemistry.',
+    role: 'UX/UI Designer - storefront design, personalization quiz flow, and product page system.',
+    process: [['Research', 'Mapped the personalization journey'], ['Wireframes', 'Guided Skin ID quiz flow'], ['UI Design', 'Clinical yet premium visual system'], ['Hand-off', 'Shopify-ready design system']],
+    results: [['Guided', 'Personalization quiz'], ['Clear', 'Ingredient transparency'], ['Premium', 'Brand feel']],
+    tools: 'Figma, Shopify', link: 'https://www.byjimmy.io/', linkType: 'Website'
+  },
+  {
+    id: 'aurave', title: 'Auravé - Luxury Skincare', cats: ['ecommerce'],
+    tags: ['E-commerce', 'Beauty', 'Shopify'], desc: 'A luxury botanical skincare store blending Ayurvedic ritual with modern science.',
+    overview: 'A premium skincare brand rooted in Ayurvedic and Chinese botanical traditions. The storefront pairs warm, editorial imagery with ritual guides that teach customers how and when to use each product.',
+    challenge: 'The brand needed to feel luxurious and ancestral without falling into the generic "clean beauty" visual cliché.',
+    role: 'UX/UI Designer - brand-led storefront, product pages, and editorial content layouts.',
+    process: [['Discovery', 'Defined the ritual-led brand direction'], ['Wireframes', 'Editorial, content-rich layouts'], ['UI Design', 'Warm, earthy system with serif type'], ['Hand-off', 'Shopify theme design']],
+    results: [['Elevated', 'Luxury positioning'], ['Ritual-led', 'Customer education'], ['Cohesive', 'Brand story']],
+    tools: 'Figma, Shopify', link: 'https://auraveskin.com/', linkType: 'Website'
+  },
+  {
+    id: 'shaunzander', title: 'Shaun Zander Beauty - Cosmetics', cats: ['ecommerce'],
+    tags: ['E-commerce', 'Cosmetics', 'Shopify'], desc: 'A long-wear cosmetics store for mature skin, with bilingual EN/TH support.',
+    overview: 'A "Beauty Over 30" cosmetics brand focused on long-wear makeup for mature skin. The store serves a Thailand-based audience with full English/Thai support, local payment methods, and a risk-free trial offer.',
+    challenge: 'An underserved demographic needed a store that felt modern and premium while staying reassuring - and it had to read well in two languages.',
+    role: 'UX/UI Designer - storefront, product pages, and bilingual layout system.',
+    process: [['Research', 'Studied the over-30 beauty shopper'], ['Wireframes', 'Trust-first product pages'], ['UI Design', 'Clean, confident cosmetics aesthetic'], ['Localization', 'Bilingual EN + TH layouts']],
+    results: [['Bilingual', 'EN + TH storefront'], ['Risk-free', 'Trial framing'], ['Higher', 'Purchase confidence']],
+    tools: 'Figma, Shopify', link: 'https://www.shaunzanderbeauty.com/', linkType: 'Website'
+  },
+  {
+    id: 'twentytimestwo', title: 'Twenty Times Two - Eyewear Store', cats: ['ecommerce', 'healthcare'],
+    tags: ['E-commerce', 'Eyewear', 'Healthcare'], desc: 'An independent optometry store selling eyewear alongside bookable eye care.',
+    overview: 'An independent Melbourne optometry practice with a full e-commerce storefront - prescription glasses, contact lenses, and eye-care products sitting alongside bookable clinical services.',
+    challenge: 'The site had to do two jobs at once: sell eyewear online and book clinical appointments, without either journey getting lost in the other.',
+    role: 'UX/UI Designer - information architecture, storefront, and appointment booking flow.',
+    process: [['Research', 'Separated shoppers from patients'], ['IA', 'Split retail and clinical journeys'], ['UI Design', 'Professional, trustworthy system'], ['Prototype', 'Booking + checkout flows']],
+    results: [['Dual', 'Retail + clinical paths'], ['Simpler', 'Lens selection'], ['Trusted', 'Local eye care']],
+    tools: 'Figma, Shopify', link: 'https://www.twentytimestwo.com.au/', linkType: 'Website'
+  },
+  {
     id: 'lumen', title: 'Lumen - Banking Dashboard', thumb: 'thumb-1', cats: ['fintech', 'mobile'],
     tags: ['Fintech', 'Mobile-first'], desc: 'A consumer banking app rebuilt around clarity and trust.',
     overview: 'A complete redesign of a consumer fintech app, focused on making everyday banking feel calm and effortless.',
@@ -118,7 +158,7 @@ const PROJECTS = [
     process: [['Audit', 'Funnel + analytics review'], ['Wireframes', 'Streamlined 2-step checkout'], ['UI', 'Polished, trustworthy storefront'], ['Testing', 'A/B validated key changes']],
     results: [['+45%', 'Conversions'], ['-30%', 'Cart abandonment'], ['+18%', 'AOV']],
     tools: 'Figma, Hotjar, AI tools',
-    link: 'https://www.behance.net/search/projects?search=ecommerce+mobile+app+design', linkType: 'Behance'
+    link: 'https://shopwave.com/', linkType: 'Website'
   },
   {
     id: 'medix', title: 'Medix - Patient Portal', thumb: 'thumb-7', cats: ['healthcare', 'saas'],
@@ -165,6 +205,10 @@ const IMAGES = {
   proxe:     'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=900&q=80',
   ldn:       'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80',
   firmpet:   'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=900&q=80',
+  byjimmy:        'assets/projects/byjimmy.png',
+  aurave:         'assets/projects/aurave.png',
+  shaunzander:    'assets/projects/shaunzander.png',
+  twentytimestwo: 'assets/projects/twentytimestwo.png',
   lumen:     'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80',
   atlas:     'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80',
   bloom:     'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=80',
@@ -239,7 +283,7 @@ function openModal(id) {
   if (p.link) {
     linkWrap.style.display = '';
     linkEl.href = p.link;
-    linkEl.querySelector('span').textContent = 'Open ' + p.linkType + ' file';
+    linkEl.querySelector('span').textContent = p.linkType === 'Website' ? 'Visit live website' : 'Open ' + p.linkType + ' file';
   } else {
     linkWrap.style.display = 'none';
   }
