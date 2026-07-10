@@ -2,7 +2,7 @@
 // EDIT EVERYTHING HERE.  All site copy lives in this one file.
 // Content sourced from Nirvisha's full-stack résumé (Nirvisha FULL-STACK.pdf).
 // NOTE: résumé header reads "Nirvisha Gondaliya"; display name kept as
-// "Nirvisha Vora" per request — change `name` below if it should be Gondaliya.
+// "Nirvisha Vora" per request - change `name` below if it should be Gondaliya.
 // ============================================================================
 
 export const profile = {
@@ -11,16 +11,16 @@ export const profile = {
   role: 'Full Stack Developer',
   // Hero
   heroGreeting: 'hello world',
-  heroTagline: 'I build scalable web apps — front to back.',
+  heroTagline: 'I build scalable web apps - front to back.',
   heroBlurb:
-    'Full-Stack Developer with 6+ years building production web applications with React, Next.js and Node.js — across travel, real estate, music, fashion and AI.',
+    'Full-Stack Developer with 6+ years building production web applications with React, Next.js and Node.js - across travel, real estate, music, fashion and AI.',
   // About
   philosophy: 'clean architecture, real performance, shipped products',
   about:
     'Full-Stack Developer with 6+ years of experience building scalable web applications using ' +
     'React.js, Node.js, Next.js and other modern JavaScript frameworks. I specialise in front-end ' +
     'architecture, state management (Redux, RxJS) and REST/GraphQL APIs. I’ve led cross-functional ' +
-    'teams and delivered high-impact projects across travel, real estate, music, fashion and AI — ' +
+    'teams and delivered high-impact projects across travel, real estate, music, fashion and AI - ' +
     'owning products end to end, from technical architecture to ship.',
   location: 'Gujarat, India',
   availability: 'Remote · Available immediately',
@@ -36,7 +36,7 @@ export const socials = [
   { label: 'Email', url: 'mailto:nirvisha.v@gmail.com', icon: 'mail' },
 ]
 
-// Skills grouped by tab — straight from the résumé's Technical Skills.
+// Skills grouped by tab - straight from the résumé's Technical Skills.
 export const skillGroups = [
   {
     name: 'Frontend',
@@ -66,7 +66,7 @@ export const skillGroups = [
 // The technologies surfaced in the hero "work stack" strip.
 export const workStack = ['React', 'Next.js', 'TypeScript', 'Node.js', 'Redux', 'RxJS', 'Tailwind', 'MongoDB']
 
-// Projects — real client work. Order matches the brief.
+// Projects - real client work. Order matches the brief.
 export const projects = [
   {
     title: 'Tropical Sky',
@@ -81,7 +81,7 @@ export const projects = [
     title: 'Practice Perfect',
     domain: 'Healthcare · EdTech',
     blurb:
-      'AI-powered consultation trainer for NHS clinicians — realistic AI patients, framework-aligned scenarios and instant, personalised feedback.',
+      'AI-powered consultation trainer for NHS clinicians - realistic AI patients, framework-aligned scenarios and instant, personalised feedback.',
     tags: ['React', 'Next.js', 'Node.js', 'AI'],
     image: '/projects/practiceperfect.png',
     live: 'https://www.practiceperfect.co.uk/',
@@ -90,7 +90,7 @@ export const projects = [
     title: 'aiKat',
     domain: 'AI · Marketing',
     blurb:
-      'AI video marketing platform that turns brand inputs into 30 social-ready videos in 30 minutes — scripts, storyboards and renders in one workflow.',
+      'AI video marketing platform that turns brand inputs into 30 social-ready videos in 30 minutes - scripts, storyboards and renders in one workflow.',
     tags: ['React', 'Next.js', 'Node.js', 'AI'],
     image: '/projects/aikat.png',
     live: 'https://www.aikat.ai/',
@@ -99,7 +99,7 @@ export const projects = [
     title: 'vidBoard.ai',
     domain: 'AI · Video',
     blurb:
-      'Text-to-video platform — turns docs, text and webpages into polished videos with 100+ AI presenters and 500+ voices across 100+ languages.',
+      'Text-to-video platform - turns docs, text and webpages into polished videos with 100+ AI presenters and 500+ voices across 100+ languages.',
     tags: ['React', 'Next.js', 'Node.js', 'AI'],
     image: '/projects/vidboard.png',
     live: 'https://www.vidboard.ai/',
@@ -117,7 +117,7 @@ export const projects = [
     title: 'London Fashion Week',
     domain: 'Fashion',
     blurb:
-      'Lead developer on the official London Fashion Week build — high-performance, content-rich site with secure Nuvei payments.',
+      'Lead developer on the official London Fashion Week build - high-performance, content-rich site with secure Nuvei payments.',
     tags: ['Next.js', 'Astro.js', 'Redux-Saga', 'RxJS', 'Nuvei'],
     image: '/projects/londonfashionweek.png',
     live: 'https://londonfashionweek.co.uk/',
@@ -128,7 +128,7 @@ export const experience = [
   {
     role: 'Full-Stack Developer / Freelancer',
     company: 'Self-Employed · Remote',
-    period: 'Mar 2021 — Present',
+    period: 'Mar 2021 - Present',
     points: [
       'Delivered 10+ end-to-end full-stack web applications for global clients.',
       'Built scalable React / Next.js frontends and integrated REST / GraphQL APIs.',
@@ -139,7 +139,7 @@ export const experience = [
   {
     role: 'Lead Mobile App & Frontend Developer',
     company: 'Tecocraft Ltd. · Gujarat, India',
-    period: 'Nov 2017 — Feb 2020',
+    period: 'Nov 2017 - Feb 2020',
     points: [
       'Converted legacy apps into modern React Native / React.js codebases.',
       'Built real-time notifications, Stripe / Braintree payments and user dashboards.',
@@ -156,9 +156,9 @@ export const achievements = [
 ]
 
 export const education = {
-  degree: 'B.E. — Computer Science',
+  degree: 'B.E. - Computer Science',
   school: 'T.R. Tanti College',
-  period: 'Aug 2015 — Jul 2017 · CGPA 8.09 / 10',
+  period: 'Aug 2015 - Jul 2017 · CGPA 8.09 / 10',
 }
 
 export const quote = {

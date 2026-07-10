@@ -38,7 +38,10 @@
 
   <!-- ============ HEADER ============ -->
   <header class="header" id="header">
-    <a href="#home" class="logo" aria-label="Nirvisha home">Nirvisha<span>.</span></a>
+    <a href="#home" class="logo" aria-label="Nirvisha home">
+      <img src="nirvisha.jpg" alt="" class="logo__avatar" onerror="this.remove()">
+      Nirvisha<span>.</span>
+    </a>
     <div class="nav" id="nav">
       <nav class="nav__links" aria-label="Primary">
         <a href="#home">Home</a>
@@ -72,19 +75,11 @@
             </a>
             <a href="#contact" class="btn btn--secondary">Contact Me</a>
           </div>
-          <p class="hero__loc reveal">UX Research · UI Design · Design Systems · Prototyping</p>
-        </div>
-        <div class="hero__photo reveal">
-          <div class="headshot">
-            <img src="nirvisha.jpg" alt="Nirvisha - UX/UI & Web Designer" class="photo"
-                 onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
-            <div class="headshot__ph" style="display:none">
-              <svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><circle cx="50" cy="38" r="18" fill="rgba(255,255,255,0.9)"/><path d="M20 86c0-17 13-28 30-28s30 11 30 28" fill="rgba(255,255,255,0.9)"/></svg>
-              <span class="headshot__note">Save your photo as nirvisha.jpg</span>
-            </div>
+          <div class="hero__proof reveal">
+            <span class="proof proof--1"><span class="ic"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8l3 3 9-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> 5+ yrs experience</span>
+            <span class="proof proof--2"><span class="ic"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l2.2 4.5L15 6l-3.5 3.4L12.4 15 8 12.6 3.6 15l.9-5.6L1 6l4.8-.5z" fill="currentColor"/></svg></span> 5.0 rating</span>
           </div>
-          <div class="float-card float-card--1"><span class="ic"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8l3 3 9-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> 5+ yrs experience</div>
-          <div class="float-card float-card--2"><span class="ic"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l2.2 4.5L15 6l-3.5 3.4L12.4 15 8 12.6 3.6 15l.9-5.6L1 6l4.8-.5z" fill="currentColor"/></svg></span> 5.0 rating</div>
+          <p class="hero__loc reveal">UX Research · UI Design · Design Systems · Prototyping</p>
         </div>
       </div>
     </section>
@@ -174,14 +169,6 @@
           <h2 class="section-title">Design with clarity &amp; purpose</h2>
         </div>
         <div class="about__grid">
-          <div class="about__photo reveal">
-            <img src="nirvisha.jpg" alt="Nirvisha - UX/UI & Web Designer" class="photo"
-                 onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
-            <div class="headshot__ph" style="display:none">
-              <svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><circle cx="50" cy="38" r="18" fill="rgba(255,255,255,0.9)"/><path d="M20 90c0-17 13-30 30-30s30 13 30 30" fill="rgba(255,255,255,0.9)"/></svg>
-              <span class="headshot__note">Save your photo as nirvisha.jpg</span>
-            </div>
-          </div>
           <div>
             <p class="about__lead reveal">I'm a UX/UI &amp; web designer with a background in design and tech, and 5+ years crafting digital products people genuinely enjoy using.</p>
             <p class="about__text reveal">My work blends creative and technical expertise - I care as much about user-centered research and clear information architecture as I do about pixel-level polish. The throughline is always clarity, usability, and visual hierarchy.</p>

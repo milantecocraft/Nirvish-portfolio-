@@ -6,6 +6,42 @@
       "runtimeExecutable": "powershell",
       "runtimeArgs": ["-ExecutionPolicy", "Bypass", "-File", ".claude/serve.ps1", "8123"],
       "port": 8123
+    },
+    {
+      "name": "dev-portfolio",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-ExecutionPolicy", "Bypass", "-File", ".claude/serve-dev.ps1", "8124"],
+      "port": 8124
+    },
+    {
+      "name": "fullstack-portfolio",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "fullstack-portfolio"],
+      "port": 8125
+    },
+    {
+      "name": "vineet-fullstack-portfolio",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "vineet-fullstack-portfolio"],
+      "port": 8126
+    },
+    {
+      "name": "vineet-uiux-portfolio",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-ExecutionPolicy", "Bypass", "-File", ".claude/serve-folder.ps1", "8127", "vineet-uiux-portfolio"],
+      "port": 8127
+    },
+    {
+      "name": "vineet-app-portfolio",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-ExecutionPolicy", "Bypass", "-File", ".claude/serve-folder.ps1", "8128", "vineet-app-portfolio"],
+      "port": 8128
+    },
+    {
+      "name": "kajal-fullstack-portfolio",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/Binal/Desktop/company/kajal-fullstack-portfolio"],
+      "port": 8129
     }
   ]
 }
