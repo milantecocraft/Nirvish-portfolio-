@@ -442,3 +442,91 @@ h1, h2, h3, h4 { color: var(--heading); font-weight: 700; letter-spacing: -0.02e
   * { animation: none !important; transition: none !important; }
   .reveal { opacity: 1 !important; transform: none !important; }
 }
+
+/* ============================================================
+   HERO — FULL-STACK PIPELINE GRAPHIC
+   Layered Frontend → API → Database planes in 3D, with request
+   and response packets travelling the wires between them.
+   ============================================================ */
+.pipeline { position: relative; z-index: 2; width: 100%; max-width: 460px; perspective: 1100px; margin: 56px auto 0; }
+.pipeline__stack {
+  --rx: 0deg; --ry: 0deg;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--rx)) rotateY(var(--ry));
+  transition: transform .4s var(--ease);
+  will-change: transform;
+}
+.pl-card {
+  position: relative; overflow: hidden; text-align: left;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(150deg, rgba(255,255,255,.055), rgba(255,255,255,.012));
+  backdrop-filter: blur(10px);
+  padding: 15px 17px;
+  transform: translateZ(calc(var(--pl-depth) * 20px));
+  transition: transform .4s var(--ease), border-color .3s var(--ease), box-shadow .4s var(--ease);
+}
+/* accent edge + glow */
+.pl-card::before {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+  background: var(--pl-accent); box-shadow: 0 0 18px var(--pl-accent);
+}
+/* slow light sweep */
+.pl-card::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(115deg, transparent 42%, rgba(255,255,255,.07) 50%, transparent 58%);
+  transform: translateX(-100%);
+  animation: plSweep 6s ease-in-out infinite;
+}
+.pl-card:hover {
+  border-color: var(--pl-accent);
+  box-shadow: 0 24px 55px -22px var(--pl-accent);
+  transform: translateZ(calc(var(--pl-depth) * 20px + 26px));
+}
+@keyframes plSweep { 0%, 65% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+
+.pl-head { position: relative; z-index: 1; display: flex; align-items: center; gap: 12px; }
+.pl-ic {
+  display: flex; width: 34px; height: 34px; flex: none;
+  align-items: center; justify-content: center;
+  border-radius: 10px; border: 1px solid var(--line);
+  background: var(--deep); color: var(--pl-accent);
+}
+.pl-meta { display: flex; flex-direction: column; line-height: 1.35; min-width: 0; }
+.pl-meta b { font-size: 14.5px; font-weight: 600; color: var(--heading); }
+.pl-meta i { font-style: normal; font-size: 11.5px; color: var(--faint); }
+.pl-chips { position: relative; z-index: 1; margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
+.pl-chips span {
+  border-radius: 6px; background: var(--deep); border: 1px solid var(--line);
+  padding: 3px 8px; font-size: 11px; color: var(--muted);
+}
+
+/* connecting wire + travelling packets */
+.pl-wire { position: relative; width: 2px; height: 44px; margin: 0 auto;
+  background: linear-gradient(180deg, var(--line), var(--accent), var(--line)); }
+.pkt { position: absolute; left: 50%; margin-left: -4px; width: 8px; height: 8px; border-radius: 50%; }
+.pkt--down { background: var(--accent-l); box-shadow: 0 0 14px var(--accent-l); animation: pktDown 2.4s linear infinite; }
+.pkt--up   { background: var(--teal);     box-shadow: 0 0 14px var(--teal);     animation: pktUp 2.8s linear infinite; }
+@keyframes pktDown { 0% { top: -8px; opacity: 0; } 12% { opacity: 1; } 88% { opacity: 1; } 100% { top: 100%; opacity: 0; } }
+@keyframes pktUp   { 0% { top: 100%; opacity: 0; } 12% { opacity: 1; } 88% { opacity: 1; } 100% { top: -8px; opacity: 0; } }
+
+.pipeline__legend { margin-top: 18px; display: flex; justify-content: center; gap: 20px; font-size: 12px; color: var(--faint); }
+.pipeline__legend span { display: inline-flex; align-items: center; gap: 7px; }
+.lgd { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+
+/* magnetic CTA buttons */
+.hero__cta .btn { will-change: transform; }
+
+/* two-column hero on desktop: copy left, pipeline right */
+@media (min-width: 1024px) {
+  .hero__grid { grid-template-columns: 1.05fr .95fr; gap: 56px; text-align: left; align-items: center; }
+  .hero__intro { max-width: 620px; }
+  .hero__sub { margin-left: 0; margin-right: 0; }
+  .hero__cta, .hero__proof { justify-content: flex-start; }
+  .pipeline { margin: 0; max-width: 440px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pl-card::after, .pkt { animation: none; }
+  .pipeline__stack, .pl-card { transform: none !important; transition: none; }
+}

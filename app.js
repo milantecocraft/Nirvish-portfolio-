@@ -95,103 +95,94 @@ const PROJECTS = [
     tools: 'Figma, Shopify', link: 'https://www.twentytimestwo.com.au/', linkType: 'Website'
   },
   {
-    id: 'lumen', title: 'Lumen - Banking Dashboard', thumb: 'thumb-1', cats: ['fintech', 'mobile'],
-    tags: ['Fintech', 'Mobile-first'], desc: 'A consumer banking app rebuilt around clarity and trust.',
-    overview: 'A complete redesign of a consumer fintech app, focused on making everyday banking feel calm and effortless.',
-    challenge: 'Users were dropping off during onboarding and struggled to find core actions in a cluttered interface.',
-    role: 'Lead Product Designer - research, IA, UI, prototyping, and design-system foundations.',
-    process: [['Research', 'Interviews + funnel analysis to find drop-off points'], ['Wireframes', 'Restructured IA and simplified key flows'], ['UI Design', 'Calm, trustworthy visual system'], ['Testing', 'Usability tests on prototypes before build']],
-    results: [['+38%', 'Activation'], ['-22%', 'Support tickets'], ['4.8★', 'App rating']],
-    tools: 'Figma, Maze, Spline, AI research tools',
-    link: 'https://www.behance.net/search/projects?search=banking+dashboard+ux', linkType: 'Behance'
+    id: 'vidboard', title: 'vidBoard.ai - AI Video Platform', cats: ['saas'],
+    tags: ['SaaS', 'AI', 'Web'], desc: 'An AI video platform that turns docs, links, or prompts into avatar-led videos.',
+    overview: 'A SaaS platform where users generate studio-quality, avatar-led videos with voices and captions from a doc, link, or prompt - no camera or filming required.',
+    challenge: 'A powerful AI pipeline had to feel effortless, so non-editors could go from prompt to finished video in minutes.',
+    role: 'UX/UI Designer - marketing site, product flows, and design system.',
+    process: [['Research', 'Mapped creator + marketer workflows'], ['Wireframes', 'Prompt-to-video flow'], ['UI Design', 'Confident, modern SaaS system'], ['Prototype', 'Interactive editor concepts']],
+    results: [['Faster', 'Video creation'], ['Clearer', 'AI onboarding'], ['Higher', 'Trial sign-ups']],
+    tools: 'Figma', link: 'https://www.vidboard.ai/', linkType: 'Website'
   },
   {
-    id: 'atlas', title: 'Atlas - Analytics Platform', thumb: 'thumb-2', cats: ['saas'],
-    tags: ['SaaS', 'Web App', 'Data Viz'], desc: 'A dense B2B analytics dashboard made genuinely legible.',
-    overview: 'A B2B analytics platform redesign introducing a flexible data-visualization system used across 30+ screens.',
-    challenge: 'Powerful but overwhelming - teams couldn’t extract insights quickly from a data-heavy UI.',
-    role: 'Product Designer - design system, data-viz patterns, and core dashboard UI.',
-    process: [['Audit', 'Heuristic review of existing screens'], ['Patterns', 'Reusable chart + table components'], ['System', 'Tokens and a scalable component library'], ['Validation', 'Stakeholder + user testing rounds']],
-    results: [['3×', 'Faster shipping'], ['+30%', 'Feature adoption'], ['30+', 'Screens unified']],
-    tools: 'Figma, Storybook hand-off, AI tools',
-    link: 'https://www.behance.net/search/projects?search=analytics+dashboard+saas', linkType: 'Behance'
+    id: 'mionio', title: 'Mionio Outdoor - Website', cats: ['saas'],
+    tags: ['Web', 'Outdoor', 'Brand'], desc: 'A product showcase site for a maker of bioclimatic pergolas and canopies.',
+    overview: 'A clean, image-led website for an outdoor-structures brand - showcasing bioclimatic pergolas, carports, and canopies for residential and commercial projects, with a quote-request flow.',
+    challenge: 'A technical product line needed to feel premium and easy to browse, guiding visitors toward a quote rather than a cart.',
+    role: 'UX/UI Designer - IA, product-category pages, and lead flow.',
+    process: [['Discovery', 'Mapped product categories'], ['Wireframes', 'Visual, project-led layouts'], ['UI Design', 'Minimalist, premium system'], ['Prototype', 'Quote-request flow']],
+    results: [['Premium', 'Brand feel'], ['Clearer', 'Product browsing'], ['More', 'Quote requests']],
+    tools: 'Figma', link: 'https://mionioutdoor.com/', linkType: 'Website'
   },
   {
-    id: 'bloom', title: 'Bloom - Wellness App', thumb: 'thumb-3', cats: ['mobile', 'healthcare'],
-    tags: ['Health', 'Mobile', 'Branding'], desc: 'A calming habit-tracker with expressive motion.',
-    overview: 'A wellness companion app with a warm brand, custom illustration, and an expressive interaction language.',
-    challenge: 'Habit apps feel like chores. The product needed to feel supportive and rewarding, not punishing.',
-    role: 'End-to-end Designer - brand, illustration direction, UI, and motion.',
-    process: [['Discovery', 'Defined emotional goals + brand'], ['Wireframes', 'Low-friction daily flows'], ['Design', 'Soft visual system + micro-animations'], ['Testing', 'Beta cohort feedback loops']],
-    results: [['+30%', 'Engagement'], ['+25%', 'Day-30 retention'], ['4.9★', 'App rating']],
-    tools: 'Figma, Spline, Lottie, AI tools',
-    link: 'https://www.behance.net/search/projects?search=wellness+health+app+design', linkType: 'Behance'
+    id: 'thexmedia', title: 'TheXMedia - Agency Website', cats: ['saas'],
+    tags: ['Agency', 'Marketing', 'Web'], desc: 'A results-led site for a personal-branding and content agency.',
+    overview: 'A bold website for a personal-branding agency that produces viral short-form content and lead generation for professionals - built around social proof and client success stories.',
+    challenge: 'The site had to sell trust fast, foregrounding real results (views, followers, clients) without feeling cluttered.',
+    role: 'UX/UI Designer - site design, case-study layouts, and CTAs.',
+    process: [['Research', 'Studied the target professional'], ['Wireframes', 'Proof-first page structure'], ['UI Design', 'Bold, contemporary system'], ['Prototype', 'Lead-capture flow']],
+    results: [['Trust-first', 'Social proof'], ['Stronger', 'Conversion path'], ['Cohesive', 'Brand story']],
+    tools: 'Figma', link: 'https://www.thexmedia.com/', linkType: 'Website'
   },
   {
-    id: 'forge', title: 'Forge - Developer Platform', thumb: 'thumb-4', cats: ['saas'],
-    tags: ['Dev Tools', 'SaaS', 'Systems'], desc: 'IA and UI for a cloud tooling suite, plus its design system.',
-    overview: 'End-to-end information architecture and UI for a developer cloud platform, plus the component library that scaled the team.',
-    challenge: 'A deeply technical product was hard for new users to approach and slow for the team to build.',
-    role: 'Senior Product Designer - IA, UI, and design-system ownership.',
-    process: [['Research', 'Developer interviews + task analysis'], ['IA', 'Restructured navigation + mental models'], ['System', 'Component library + documentation'], ['Hand-off', 'Dev-ready specs and tokens']],
-    results: [['-25%', 'Support load'], ['2×', 'Onboarding speed'], ['100+', 'Components']],
-    tools: 'Figma, Storybook, AI tools',
-    link: 'https://www.behance.net/search/projects?search=developer+platform+ui+design', linkType: 'Behance'
+    id: 'neuvera', title: 'Neuvera Life - Wellness Store', cats: ['ecommerce', 'healthcare'],
+    tags: ['E-commerce', 'Wellness', 'Shopify'], desc: 'A clinical-yet-clean store for dissolving daily wellness strips.',
+    overview: 'A Shopify wellness brand selling oral dissolving strips as a needle-free alternative to peptide injectables. The storefront lets users build custom routines and manage subscriptions.',
+    challenge: 'A science-forward product needed to feel both clinically credible and effortless to shop.',
+    role: 'UX/UI Designer - storefront, routine builder, and subscription flow.',
+    process: [['Research', 'Mapped the wellness shopper'], ['Wireframes', 'Routine-builder flow'], ['UI Design', 'Minimal, clinical system'], ['Hand-off', 'Shopify-ready design']],
+    results: [['Credible', 'Clinical feel'], ['Guided', 'Routine builder'], ['Recurring', 'Subscriptions']],
+    tools: 'Figma, Shopify', link: 'https://neuveralife.com/', linkType: 'Website'
   },
   {
-    id: 'tradeline', title: 'Tradeline - Trading App', thumb: 'thumb-5', cats: ['fintech', 'mobile'],
-    tags: ['Fintech', 'Mobile'], desc: 'A retail trading experience that balances power and calm.',
-    overview: 'A mobile-first retail trading app designed to make complex markets approachable without dumbing them down.',
-    challenge: 'Trading UIs intimidate new investors while pros demand density. We needed both audiences served.',
-    role: 'Product Designer - flows, UI, and prototyping.',
-    process: [['Research', 'Segmented novice vs. pro needs'], ['Wireframes', 'Progressive disclosure flows'], ['UI', 'Clear hierarchy + confident defaults'], ['Testing', 'Prototype tests with both segments']],
-    results: [['+45%', 'Sign-up conversion'], ['2 wks', 'Saved in sign-off'], ['4.7★', 'App rating']],
-    tools: 'Figma, Maze, Spline',
-    link: 'https://www.behance.net/search/projects?search=trading+fintech+app+ux', linkType: 'Behance'
+    id: 'engravables', title: 'Engravables - Custom Gifts Store', cats: ['ecommerce'],
+    tags: ['E-commerce', 'Custom Gifts', 'Shopify'], desc: 'A premium personalized-gift store organized by occasion and recipient.',
+    overview: 'A Shopify store for a 45-year-old engraving house - custom-engraved pens, jewellery, flasks, and awards, organised by occasion and recipient for easy gifting.',
+    challenge: 'A huge, personalizable catalogue had to feel simple to shop and trustworthy for gifting.',
+    role: 'UX/UI Designer - IA, collection pages, and personalization UI.',
+    process: [['Research', 'Mapped gifting journeys'], ['Wireframes', 'Occasion + recipient nav'], ['UI Design', 'Premium, trustworthy system'], ['Hand-off', 'Shopify theme design']],
+    results: [['Simpler', 'Gift discovery'], ['Clearer', 'Personalization'], ['Premium', 'Brand feel']],
+    tools: 'Figma, Shopify', link: 'http://engravables.ca/', linkType: 'Website'
   },
   {
-    id: 'shopwave', title: 'ShopWave - E-commerce', thumb: 'thumb-6', cats: ['ecommerce', 'mobile'],
-    tags: ['E-commerce', 'Mobile'], desc: 'A conversion-focused storefront and checkout redesign.',
-    overview: 'A storefront and checkout redesign for a growing e-commerce brand, optimized for mobile conversion.',
-    challenge: 'A leaky checkout funnel and inconsistent product pages were costing the brand real revenue.',
-    role: 'UX/UI Designer - checkout flow, product pages, and design system.',
-    process: [['Audit', 'Funnel + analytics review'], ['Wireframes', 'Streamlined 2-step checkout'], ['UI', 'Polished, trustworthy storefront'], ['Testing', 'A/B validated key changes']],
-    results: [['+45%', 'Conversions'], ['-30%', 'Cart abandonment'], ['+18%', 'AOV']],
-    tools: 'Figma, Hotjar, AI tools',
-    link: 'https://shopwave.com/', linkType: 'Website'
+    id: 'elevenfarms', title: '11 Farms - Fresh Produce Brand', cats: ['ecommerce'],
+    tags: ['E-commerce', 'Agri-tech', 'Brand'], desc: 'A modern brand and store for pesticide-free, vertically farmed produce.',
+    overview: 'A health-conscious brand and store for a vertical farm delivering pesticide-free, year-round fresh produce via subscription and direct sales.',
+    challenge: 'The brand had to feel premium and fresh, making subscriptions the obvious way to buy.',
+    role: 'UX/UI Designer - brand-led site, product pages, and subscription flow.',
+    process: [['Discovery', 'Defined the fresh, clean brand'], ['Wireframes', 'Subscription-first layout'], ['UI Design', 'Bright, health-forward system'], ['Prototype', 'Subscription flow']],
+    results: [['Premium', 'Produce brand'], ['Clear', 'Subscription value'], ['Fresh', 'Visual identity']],
+    tools: 'Figma', link: 'https://11farms.co/', linkType: 'Website'
   },
   {
-    id: 'medix', title: 'Medix - Patient Portal', thumb: 'thumb-7', cats: ['healthcare', 'saas'],
-    tags: ['Healthcare', 'SaaS'], desc: 'An accessible patient portal for booking and records.',
-    overview: 'A patient portal redesign for booking, records, and messaging - with accessibility as a first-class requirement.',
-    challenge: 'A wide range of users (including older patients) struggled with an inaccessible, confusing legacy portal.',
-    role: 'Product Designer - accessibility, IA, and UI.',
-    process: [['Research', 'Inclusive research across ages/abilities'], ['IA', 'Simplified core tasks'], ['Design', 'WCAG-AA compliant UI'], ['Testing', 'Assistive-tech validation']],
-    results: [['AA', 'WCAG compliant'], ['+40%', 'Self-service bookings'], ['-35%', 'Call volume']],
-    tools: 'Figma, axe, AI tools',
-    link: 'https://www.behance.net/search/projects?search=healthcare+patient+portal+ux', linkType: 'Behance'
+    id: 'bit', title: 'Bit.com - Crypto Exchange', cats: ['fintech', 'saas'],
+    tags: ['Fintech', 'Crypto', 'Web'], desc: 'A regulated exchange for crypto, US stocks, and real-world assets.',
+    overview: 'A regulated trading platform where users trade crypto, invest in US stocks, and access real-world assets from one account - backed by billions in custody across multiple licenses.',
+    challenge: 'A dense, high-stakes financial product had to feel trustworthy and approachable for new and pro traders alike.',
+    role: 'UX/UI Designer - marketing site, sign-up flow, and trust UI.',
+    process: [['Research', 'Segmented novice vs. pro traders'], ['Wireframes', 'Clear onboarding flow'], ['UI Design', 'Confident, secure system'], ['Prototype', 'Sign-up + trust flows']],
+    results: [['Trusted', 'Regulated feel'], ['Clearer', 'Onboarding'], ['Higher', 'Sign-up intent']],
+    tools: 'Figma', link: 'https://www.bit.com/', linkType: 'Website'
   },
   {
-    id: 'questly', title: 'Questly - Gamified Learning', thumb: 'thumb-8', cats: ['saas', 'mobile'],
-    tags: ['SaaS', 'Gamified'], desc: 'A gamified learning interface with playful progression.',
-    overview: 'A gamified learning app with streaks, rewards, and playful progression that keeps learners coming back.',
-    challenge: 'Course completion was low - learners lost motivation without feedback and momentum.',
-    role: 'Lead Designer - gamification system, UI, and motion.',
-    process: [['Discovery', 'Motivation + behavior research'], ['System', 'Points, streaks, and rewards model'], ['Design', 'Playful, rewarding UI'], ['Testing', 'Cohort retention experiments']],
-    results: [['2.4×', 'Course completion'], ['+60%', 'Daily active use'], ['4.8★', 'App rating']],
-    tools: 'Figma, Spline, Lottie',
-    link: 'https://www.behance.net/search/projects?search=gamification+learning+app+design', linkType: 'Behance'
+    id: 'legalspace', title: 'Legalspace - AI Legal Platform', cats: ['saas'],
+    tags: ['SaaS', 'Legal', 'AI'], desc: 'An all-in-one AI platform for lawyers to research, draft, and manage.',
+    overview: 'An AI legal-software platform built for Indian lawyers, law firms, and corporate legal teams - research, drafting, matter management, and an AI legal library in one place.',
+    challenge: 'A feature-rich legal tool had to feel reliable and simple enough for busy legal professionals to trust daily.',
+    role: 'UX/UI Designer - marketing site, product IA, and dashboards.',
+    process: [['Research', 'Mapped legal workflows'], ['Wireframes', 'Unified workspace IA'], ['UI Design', 'Reliable, professional system'], ['Prototype', 'Research + drafting flows']],
+    results: [['Trusted', 'By 3,500+ pros'], ['Unified', 'Legal workspace'], ['Faster', 'Drafting']],
+    tools: 'Figma', link: 'https://legalspace.ai/', linkType: 'Website'
   },
   {
-    id: 'nestpay', title: 'NestPay - Payments SaaS', thumb: 'thumb-9', cats: ['fintech', 'saas'],
-    tags: ['Fintech', 'SaaS'], desc: 'A payments dashboard for merchants and finance teams.',
-    overview: 'A payments and reconciliation dashboard for merchants, designed to make money movement transparent and fast.',
-    challenge: 'Finance teams wrestled with opaque transaction data spread across disconnected views.',
-    role: 'Product Designer - IA, dashboards, and design system.',
-    process: [['Research', 'Finance-team workflow mapping'], ['Wireframes', 'Unified transaction views'], ['UI', 'Scannable data + clear states'], ['System', 'Reusable dashboard components']],
-    results: [['-40%', 'Reconciliation time'], ['+33%', 'Task success'], ['NPS +28', 'Customer NPS']],
-    tools: 'Figma, AI tools, Storybook',
-    link: 'https://www.behance.net/search/projects?search=payments+fintech+dashboard+design', linkType: 'Behance'
+    id: 'memusic', title: 'MeMusic - Music Platform', cats: ['saas'],
+    tags: ['Music', 'Web3', 'Web'], desc: 'A blockchain-based music platform blending crypto with a familiar model.',
+    overview: 'A "music for everyone" platform - a blockchain-based music service pairing cryptocurrency with a traditional business model, built to onboard mainstream listeners.',
+    challenge: 'Web3 concepts had to disappear behind a warm, familiar music experience anyone could use.',
+    role: 'UX/UI Designer - brand site, product concepts, and design system.',
+    process: [['Discovery', 'Defined the approachable brand'], ['Wireframes', 'Familiar music flows'], ['UI Design', 'Soft, friendly system'], ['Prototype', 'Onboarding + player concepts']],
+    results: [['Approachable', 'Web3 UX'], ['Warm', 'Brand identity'], ['Clear', 'Value story']],
+    tools: 'Figma', link: 'https://www.memusic.io/', linkType: 'Website'
   }
 ];
 
@@ -209,15 +200,15 @@ const IMAGES = {
   aurave:         'assets/projects/aurave.png',
   shaunzander:    'assets/projects/shaunzander.png',
   twentytimestwo: 'assets/projects/twentytimestwo.png',
-  lumen:     'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80',
-  atlas:     'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80',
-  bloom:     'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=80',
-  forge:     'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80',
-  tradeline: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=80',
-  shopwave:  'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=900&q=80',
-  medix:     'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80',
-  questly:   'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80',
-  nestpay:   'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80'
+  vidboard:    'assets/projects/vidboard.png',
+  mionio:      'assets/projects/mionio.webp',
+  thexmedia:   'assets/projects/thexmedia.webp',
+  neuvera:     'assets/projects/neuvera.webp',
+  engravables: 'assets/projects/engravables.webp',
+  elevenfarms: 'assets/projects/elevenfarms.webp',
+  bit:         'assets/projects/bit.png',
+  legalspace:  'assets/projects/legalspace.webp',
+  memusic:     'assets/projects/memusic.png'
 };
 const fallbackImg = id => `https://picsum.photos/seed/${id}/900/620`;
 
@@ -514,3 +505,52 @@ addEventListener('load', () => {
 
   ScrollTrigger.refresh();
 });
+
+/* ============================================================
+   HERO PIPELINE — cursor parallax tilt
+   ============================================================ */
+(function () {
+  var scene = document.getElementById('pipeline');
+  var stack = document.getElementById('pipelineStack');
+  if (!scene || !stack) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!window.matchMedia('(pointer: fine)').matches) return;
+
+  var raf = 0, rx = 0, ry = 0;
+  function apply() {
+    raf = 0;
+    stack.style.setProperty('--rx', rx.toFixed(2) + 'deg');
+    stack.style.setProperty('--ry', ry.toFixed(2) + 'deg');
+  }
+  scene.addEventListener('mousemove', function (e) {
+    var r = scene.getBoundingClientRect();
+    rx = (0.5 - (e.clientY - r.top) / r.height) * 12;
+    ry = ((e.clientX - r.left) / r.width - 0.5) * 14;
+    if (!raf) raf = requestAnimationFrame(apply);
+  });
+  scene.addEventListener('mouseleave', function () {
+    rx = 0; ry = 0;
+    if (!raf) raf = requestAnimationFrame(apply);
+  });
+})();
+
+/* ============================================================
+   MAGNETIC HERO BUTTONS — lean toward the cursor
+   (keeps the -3px hover lift baked into the transform)
+   ============================================================ */
+(function () {
+  if (!window.matchMedia('(pointer: fine)').matches) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  document.querySelectorAll('.hero__cta .btn').forEach(function (btn) {
+    btn.addEventListener('mousemove', function (e) {
+      var r = btn.getBoundingClientRect();
+      var x = (e.clientX - (r.left + r.width / 2)) * 0.28;
+      var y = (e.clientY - (r.top + r.height / 2)) * 0.28;
+      btn.style.transform = 'translate(' + x.toFixed(1) + 'px,' + (y - 3).toFixed(1) + 'px)';
+    });
+    btn.addEventListener('mouseleave', function () {
+      btn.style.transform = '';
+    });
+  });
+})();

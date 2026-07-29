@@ -16,7 +16,7 @@
     {
       "name": "fullstack-portfolio",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--prefix", "fullstack-portfolio"],
+      "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/Binal/Desktop/fullstack-portfolio"],
       "port": 8125
     },
     {
@@ -42,6 +42,42 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/Binal/Desktop/company/kajal-fullstack-portfolio"],
       "port": 8129
+    },
+    {
+      "name": "kajal-uiux-portfolio",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/Binal/Desktop/company/kajal-uiux-portfolio"],
+      "port": 8130
+    },
+    {
+      "name": "kajal-app-portfolio",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/Binal/Desktop/company/kajal-app-portfolio"],
+      "port": 8131
+    },
+    {
+      "name": "kajal-cms-portfolio",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/Binal/Desktop/company/kajal-cms-portfolio"],
+      "port": 8132
+    },
+    {
+      "name": "nirvisha-cms-portfolio",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/Binal/Desktop/company/nirvisha-cms-portfolio"],
+      "port": 8133
+    },
+    {
+      "name": "vineet-cms-portfolio",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/Binal/Desktop/company/vineet-cms-portfolio"],
+      "port": 8134
+    },
+    {
+      "name": "radhika-cms-portfolio",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/Binal/Desktop/company/radhika-cms-portfolio"],
+      "port": 8135
     }
   ]
 }

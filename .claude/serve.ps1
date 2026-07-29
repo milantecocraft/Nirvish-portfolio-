@@ -12,7 +12,7 @@ $mime = @{
   '.html'='text/html; charset=utf-8'; '.css'='text/css; charset=utf-8';
   '.js'='application/javascript; charset=utf-8'; '.json'='application/json';
   '.svg'='image/svg+xml'; '.png'='image/png'; '.jpg'='image/jpeg';
-  '.jpeg'='image/jpeg'; '.gif'='image/gif'; '.ico'='image/x-icon';
+  '.jpeg'='image/jpeg'; '.gif'='image/gif'; '.ico'='image/x-icon'; '.webp'='image/webp';
   '.woff'='font/woff'; '.woff2'='font/woff2'
 }
 
